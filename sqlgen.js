@@ -1,15 +1,3 @@
-/* function makeid () {
-  var text = '';
-  var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-
-  for (var i = 0; i < 12; i++) {
-    text += possible.charAt(Math.floor(Math.random() * possible.length));
-  }
-  return text;
-} 
-let nameGen = makeid();
-console.log(nameGen);*/
-
 let name = ['Bed', 'Chair', 'Table', 'Vase', 'Computer', 'TV', 'Armchair', 'Speaker', 'Picture', 'Gardrobe', 'Carpet'];
 let purpose = ['to eat', 'to sit', 'to lie', 'to drink', 'to rest'];
 let dimnesions = ['30x40', '50x50', '80x20', '10x10', '150x120', '180x180', '90x90'];
