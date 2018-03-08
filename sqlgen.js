@@ -24,6 +24,10 @@ function getRandomInt (max) {
 let id = 0;
 for (let i = 0; i < 622; i++) {
   id++;
-  console.log("insert into furnitures (id, name, purpose, dimnesions, room, color, has_foot, num_of_legs) values (" + id + ", '" + nameGen() + "', '" + purposeGen() + "', '" + dimnesionsGen() + "', + " + getRandomInt(5) + " + '" + colorGen() + "', 0, " + getRandomInt(4));
+  let hasLegs = getRandomInt(2);
+  let numOfLegs = getRandomInt(4);
+  if (hasLegs === 0) {
+    numOfLegs = 0;
+  }
+  console.log("insert into furnitures (id, name, purpose, dimnesions, room, color, has_foot, num_of_legs) values (" + id + ", '" + nameGen() + "', '" + purposeGen() + "', '" + dimnesionsGen() + "',  " + getRandomInt(5) + ",  '" + colorGen() + "', " + hasLegs + ", " + numOfLegs + ");");
 }
-
